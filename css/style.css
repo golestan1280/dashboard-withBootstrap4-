@@ -1,0 +1,155 @@
+html, body
+{    
+    height: 100%;    
+}
+body
+{
+   font-family: "Raleway";
+   background-color:  #f1f1f1;
+   overflow-x: hidden;
+   
+}
+
+
+.backGrey
+ {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0,0.5);
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+ }
+ 
+.nav1Top
+    {
+        background-color: black;
+    }
+
+.nav1Top>a, .nav1Top>.menueBt
+{
+    color: white;
+}
+.menueBt
+{
+    font-size: 1.1em;
+    display: none;
+}
+
+
+.iconHover:hover
+{   
+    cursor: pointer;
+    color: #000!important;
+    background-color: #ccc !important;
+    
+
+}
+.closeMnuLft
+{
+    background-color: #616161;
+    font-size: 1.2em;
+    display: none;
+}
+.hoverTabl > tbody > tr:hover
+{
+    background-color: #ccc !important;      
+}
+
+.black-hover:hover
+{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.menueBodyBt
+{
+    animation: left-to-right 550ms;
+    position: fixed;
+    max-width: inherit;
+    top: 48px;
+    overflow-y: auto !important;
+    overflow-x: none;
+}
+
+
+@keyframes left-to-right
+{
+    from{left: -300px;}
+    to{left: 0px;}
+}
+
+@media screen and (max-width:768px)
+{
+    body{
+        font-size: 10px!important;
+    }
+    .mLt
+    {
+        margin-left: 16px!important;
+        margin-top: 10px!important;
+    }
+    .mRt
+    {
+        margin-right: 0px!important;
+    }
+    
+}
+
+@media screen and (max-width: 992px)
+{
+    body
+    {
+        font-size: 12px!important;
+    }
+    
+    .menueBt{
+        display: block;
+    }
+    .closeMnuLft
+    {
+        display: block!important;
+    }
+    .menueBodyBt
+    {
+        left: -300px;
+        width: 300px!important;
+        display: none;
+    }
+      
+    .TransitionMenu
+    {
+        transition:300ms;
+    }
+}
+
+@media screen and (min-width: 992px)
+{
+    .backGrey
+    {
+        display: none!important;
+    }
+    .menueBt{
+        display: none!important;
+    }
+    .closeMnuLft{
+        display: none !important;
+    }
+   
+    .menueBodyBt
+    {
+        left: 0px!important;
+        display: block!important;
+        width: 100%!important;
+    }
+    
+    .TransitionMenu
+    {
+        transition:300ms;
+    }
+}
